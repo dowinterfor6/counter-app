@@ -24,10 +24,18 @@ node {
   //   }
   // }
   // stages {
-  stage('Build') { 
-    steps {
-      sh 'npm install' 
-    }
+  stage('Download dependencies') { 
+    // steps {
+    sh 'npm install' 
+    // }
+  }
+
+  state('Webpack build') {
+    sh 'npm run build'
+  }
+
+  state('Unit Jest testing') {
+    sh 'npm test'
   }
   // }
 }
