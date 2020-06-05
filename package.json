@@ -39,6 +39,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
     "jest": "^26.0.1",
+    "jest-junit": "^10.0.0",
     "nodemon": "^2.0.4",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
@@ -59,6 +60,18 @@
     "> 0.25%"
   ],
   "jest": {
-    "verbose": true
+    "verbose": true,
+    "coverageReporters": [
+      "text"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": "./coverage/junit/",
+    "outputName": "junit.xml",
+    "usePathForSuiteName": "true"
   }
 }

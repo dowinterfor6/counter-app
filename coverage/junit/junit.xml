@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="0" time="2.222">
+  <testsuite name="src/app/app.test.js" errors="0" failures="0" skipped="0" timestamp="2020-06-05T23:04:26" time="1.339" tests="2">
+    <testcase classname="Counter Counter to initialize with 0" name="Counter Counter to initialize with 0" time="0.01">
+    </testcase>
+    <testcase classname="Counter Counter should increment by 1 when button is clicked" name="Counter Counter should increment by 1 when button is clicked" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>
