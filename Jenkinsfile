@@ -30,11 +30,11 @@ node {
     // }
   }
 
-  state('Webpack build') {
+  stage('Webpack build') {
     sh 'npm run build'
   }
 
-  state('Unit Jest testing') {
+  stage('Unit Jest testing') {
     sh 'npm test'
   }
   // }
