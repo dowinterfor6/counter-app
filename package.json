@@ -1,5 +1,5 @@
 {
-  "name": "captcha-the-game",
+  "name": "counter-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,13 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dowinterfor6/captcha-the-game.git"
+    "url": "git+https://github.com/dowinterfor6/counter-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dowinterfor6/captcha-the-game/issues"
+    "url": "https://github.com/dowinterfor6/counter-app/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
