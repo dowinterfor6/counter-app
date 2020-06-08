@@ -16,7 +16,6 @@ pipeline {
     }
     stage ('Test') {
       steps {
-        echo "${WORKSPACE}"
         sh 'npm test'
       }
     }

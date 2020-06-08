@@ -73,5 +73,9 @@
     "outputDirectory": "./coverage/junit/",
     "outputName": "junit.xml",
     "usePathForSuiteName": "true"
+  },
+  "engines": {
+    "node": ">=13.0.0",
+    "npm": ">=6.0.0"
   }
 }
