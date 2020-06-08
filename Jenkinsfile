@@ -1,14 +1,7 @@
-node {
-  env.NODEJS_HOME = "${tool 'Node 13.x'}"
-	// on linux / mac
-	env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
-	sh 'npm --version'
-}
-
 pipeline {
   agent {
     docker {
-      image 'node:6-alpine'
+      image 'node:13-alpine'
       args '-p 3000:3000'
     }
   }
