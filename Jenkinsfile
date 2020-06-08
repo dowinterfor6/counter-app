@@ -1,3 +1,10 @@
+node {
+  env.NODEJS_HOME = "${tool 'Node 13.x'}"
+	// on linux / mac
+	env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
+	sh 'npm --version'
+}
+
 pipeline {
   agent {
     docker {
