@@ -16,8 +16,8 @@ pipeline {
     }
     stage ('Test') {
       steps {
-        echo '${WORKSPACE}'
-        sh './jenkins/scripts/test.sh'
+        echo "${WORKSPACE}"
+        sh 'npm test'
       }
     }
   }
