@@ -9,9 +9,11 @@ pipeline {
     CI = 'true'
   }
   stages {
-    stage('Initialize'){
-      def dockerHome = tool 'jenkinsDocker'
-      env.PATH = "${dockerHome}/bin:${env.PATH}"
+    stage('Initialize') {
+      steps {
+        def dockerHome = tool 'jenkinsDocker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+      }
     }
     stage('Build') {
       steps {
