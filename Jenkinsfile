@@ -7,10 +7,12 @@ pipeline {
   }
   environment {
     CI = 'true'
+    VERSION = '1.0.0'
   }
   stages {
     stage('Build') {
       steps {
+        echo "Building version ${VERSION}"
         sh 'npm install'
       }
     }
@@ -24,6 +26,12 @@ pipeline {
         sh './scripts/deliver.sh'
         input message: 'Finished using the website? (Click "Proceed" to continue)'
         sh './scripts/kill.sh'
+      }
+    }
+    stage('Artifact') {
+      steps {
+        echo "Artifact"
+        archiveArtifacts('dist/', 'public/')
       }
     }
   }
