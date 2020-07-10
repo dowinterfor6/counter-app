@@ -24,7 +24,7 @@ describe('Counter', () => {
     expect(text).toEqual(1);
   });
 
-  test('This test will fail', () => {
-    expect(true).toBe(false);
+  test('This test will succeed', () => {
+    expect(true).toBe(true);
   });
 })
