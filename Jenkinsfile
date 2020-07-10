@@ -43,5 +43,8 @@ pipeline {
     failure {
       echo 'Failed build'
     }
+    always {
+      junit 'coverage/junit/*.xml'
+    }
   }
 }
