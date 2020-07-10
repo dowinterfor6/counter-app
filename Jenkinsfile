@@ -32,7 +32,7 @@ pipeline {
       steps {
         archiveArtifacts 'dist/'
         archiveArtifacts 'public/'
-        archiveArtifacts 'coverage/'
+        archiveArtifacts 'coverage/junit/'
       }
     }
   }
