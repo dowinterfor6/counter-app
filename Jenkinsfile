@@ -30,9 +30,9 @@ pipeline {
     }
     stage('Artifact') {
       steps {
-        echo "Artifact"
         archiveArtifacts 'dist/'
         archiveArtifacts 'public/'
+        archiveArtifacts 'coverage/'
       }
     }
   }
